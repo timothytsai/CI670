@@ -4,7 +4,7 @@ author: "Document Author"
 date: "`r Sys.Date()`"
 output:
   prettydoc::html_pretty:
-    theme: architect
+    theme: cayman
     highlight: github
 ---
 
