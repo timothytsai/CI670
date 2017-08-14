@@ -8,6 +8,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 * [Syllabus](Syllabus.html)
 * [The Prequel](Prequel.html)
 * [Episode 1](Episode 1.html)
+* [Episode 2](Episode 2.html)
+* [Untitled learnr Standalone project](learnr.html)
+* [Episode 3](Episode 3.html)
 
 ### Markdown
 
