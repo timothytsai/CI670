@@ -6,6 +6,14 @@ You can use the [editor on GitHub](https://github.com/timothytsai/CI670/edit/mas
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+* [FAQ](FAQ.html)
+* [Syllabus](Syllabus.html)
+* [The Prequel](Prequel.html)
+* [Episode 1](Episode 1.html)
+* [Episode 2](Episode 2.html)
+* [Untitled learnr Standalone project](learnr.html)
+* [Episode 3](Episode 3.html)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
