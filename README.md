@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## BUGMS CI670 Lab Site
+
+Welcome to the CI 670 Lab Site.  This site hosts the lab modules and R instructional materials for the course.
 
 You can use the [editor on GitHub](https://github.com/timothytsai/CI670/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
