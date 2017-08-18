@@ -29,3 +29,8 @@ Welcome to the CI 670 Lab Site.  This site hosts the lab modules and R instructi
 link to github repo  
 blackboard  
 something else  
+
+### people to follow
+@jennybryan
+@hadleywickham
+@rdpeng
