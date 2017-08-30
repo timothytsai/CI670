@@ -8,61 +8,44 @@ output:
     highlight: github
 ---
 
-## A New Output Format
+## Why am I here?
 
-`html_pretty` in the [**prettydoc**](http://github.com/yixuan/prettydoc/)
-package is a new output format for creating HTML document from R Markdown files.
-`html_pretty` is more lightweight compared to `html_document`, and is more
-stylish than `html_vignette` when creating package vignettes.
+You are here because you're a student in CI670 - Biostatistics with Computing.
+You want to learn how to use R to perform exploratory data analysis and
+statistical analysis on your data.
 
-## New Styles
+## How do I get help?
 
-`html_pretty` currently supports three page themes (`cayman`, `tactile` and
-`architect`), and two syntax highlight styles (`github` and `vignette`).
-The theme and highlight styles can be specified in the document metadata,
-for example:
+For course content, email me or your instructor.
 
-```yaml
-output:
-  prettydoc::html_pretty:
-    theme: architect
-    highlight: github
-```
+But, the most important thing we can teach you is how to find your own answers.
+Some resources: [Stackoverflow](https://www.stackoverflow.com)
+in RStudio, cheatsheets - go to Help and then cheatsheets.
 
-## Your Familiar Tools
+## Why are you obsessed with R?
 
-Feel free to use the `knitr` infrastructure with dozens of tunable options in
-your document.
+We try to be agnostic about our statistical software.  After all, it's a just a
+means to an end.  BUT, R has some pros that we like.  This means that we get to
+our destination with a little less pain and suffering, in style if you will.
 
-```{r fig.width=6, fig.height=6, fig.align='center'}
-set.seed(123)
-n <- 1000
-x1  <- matrix(rnorm(n), ncol = 2)
-x2  <- matrix(rnorm(n, mean = 3, sd = 1.5), ncol = 2)
-x   <- rbind(x1, x2)
-head(x)
-smoothScatter(x, xlab = "x1", ylab = "x2")
-```
+R is growing in popularity
 
-You can include code snippets of languages other than R, but note that
-the block header has no curly brackets around the language name.
+open data science
 
-```cpp
-// [[Rcpp::export]]
-NumericVector timesTwo(NumericVector x) {
-    return x * 2;
-}
-```
+reproducibility
 
-You can also write math expressions, e.g. $Y = X\beta + \epsilon$,
-footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
+free
 
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(iris, 10))
-```
+nice, relatively painless graphics
 
-## Stay Tuned
+free
 
-Please visit the [development page](http://github.com/yixuan/prettydoc/) of the 
-`prettydoc` package for latest updates and news. Comments, bug reports and
-pull requests are always welcome.
+To be fair, other stats packages are more popular in certain industries.
+
+## How did you make this awesome website?
+
+This site is hosted by [GitHub Pages](https://pages.github.com), which hosts
+content directly from your [GitHub](https://www.github.com)  repository.
+
+We wrote our content in R Markdown and pushed it to our personal repository.
+From there, GitHub Pages grabs the html file and puts it out on the internet.
