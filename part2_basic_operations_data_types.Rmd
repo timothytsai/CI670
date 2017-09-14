@@ -1,0 +1,51 @@
+---
+title: "Basic Operations and Data Types in R"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+## Overview
+In this session, we will introduce some basic operations (doing things) and data
+types (things you do things to) in R.
+
+- intro to data types
+- vectors
+- arrow assignment
+- basic math functions
+- dataframes
+- summary functions
+
+If you haven't already done so, install R and RStudio in 
+[Part 1](https://timothytsai.github.io/CI670/part1_install_r.html)
+
+### Introduction to data types
+There are 5 basic types of data (classes which dictate what kinds of values a variable can take) in R:
+- logical
+- integer
+- numeric
+- complex
+- character
+
+There are many data structures in R (ways of storing and organizing data):
+- vector
+- list
+- matrix
+- data frame
+- factors
+- tables
+
+We will focus on **vectors** and **data frames**.
+
+### Vectors
+
+```{r}
+age.years <- c(25, 40, 77)
+```
+
+By running the above line of code, you just created a vector using the `c()` function and stored it as a vector named `age.years`.  
+
+A vector is a sequence of data elements of the same type.  You can have vectors of each of the data types we mentioned above.
+
+We use an arrow `<-` to assign elements on the **right** to the object on the **left**.
