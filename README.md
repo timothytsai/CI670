@@ -20,11 +20,7 @@ instructional materials for the course.
 
 * [FAQ](FAQ.html)
 * [Syllabus](Syllabus.html)
-* [The Prequel](Prequel.html)
-* [Episode 1](Episode 1.html)
-* [Episode 2](Episode 2.html)
-* [Untitled learnr Standalone project](learnr.html)
-* [Episode 3](Episode 3.html)
+* [Part 1 - Install R and RStudio](part1_install_r.html)
 
 ### Additional info
 [Source code for this site](https://github.com/timothytsai/CI670)  

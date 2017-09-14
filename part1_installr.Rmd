@@ -1,0 +1,62 @@
+---
+title: "Installing R and RStudio"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+## Getting ready
+This course uses the R statistical software package.  You should be able to
+carry out all of the basic tasks for this course with R.  We also recommend
+installing the RStudio Integrated Development Environment (IDE), an application
+that provides many quality of life enhancements for programming in R.
+
+Follow the steps below to install R and RStudio for Windows or Mac.
+
+**Important** - you must have R installed before RStudio will work.
+
+### Install R
+Visit [The R Project](https://cran.r-project.org/) and select the appropriate
+"Download R" link for your operating system (Windows/Mac/Linux) from the top of
+the page.
+
+![](img/download_r_step_1.png)
+
+#### Mac
+- After clicking "Download R for (Mac) OS X," click on the file containing the
+latest version of R under "Files."
+- Save the .pkg file, double-click it to open, and follow the installation
+instructions.
+
+![](img/download_r_step_2_mac.png)
+
+#### Windows
+- After clicking "Download R for Windows," click "base"
+
+![](img/download_r_step_2_windows.png)
+
+
+- Click "Download R 3.4.1 for Windows"
+
+
+![](img/download_r_step_3_windows.png)
+
+- Save the executable file somewhere on your computer.  Run the .exe file and 
+follow the installation instructions.  
+
+### Install RStudio
+Visit [RStudio](http://www.rstudio.com/products/rstudio/download/), select
+RStudio Desktop (Open Source License) - FREE on the left.
+
+![](img/download_rstudio_step_1.png)
+
+- Click the link appropriate to your system (Windows or Mac)
+
+#### Mac
+Save the .dmg file on your computer, double-click it to open, and then drag and 
+drop it to your applications folder.
+
+#### Windows
+Save the executable file.  Run the .exe file and follow the installation 
+instructions.     
