@@ -26,8 +26,6 @@ Welcome to the CI 670 Lab Site.  This site hosts the lab modules and R instructi
 [BU Blackboard](https://learn.bu.edu)
 
 ### people to follow
-[@jennybryan](https://twitter.com/jennybryan)
-
-[@hadleywickham](https://twitter.com/hadleywickham)
-
+[@jennybryan](https://twitter.com/jennybryan)  
+[@hadleywickham](https://twitter.com/hadleywickham)  
 [@rdpeng](https://twitter.com/rdpeng)
