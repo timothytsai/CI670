@@ -1,8 +1,7 @@
 ##  Biostatistics with Computing Lab Site
 ### BUGMS CI670
 
-Welcome to the CI 670 Lab Site.  This site hosts the lab modules and R
-instructional materials for the course.
+Welcome to the CI 670 Lab Site.  This site hosts the lab modules and R instructional materials for the course.
 
 #### By the end of the course, you'll learn how to:
 - setup an installation of R and RStudio
@@ -18,6 +17,7 @@ instructional materials for the course.
 - troubleshooting your code
 - reading in different types of data
 
+### Site Contents
 * [FAQ](FAQ.html)
 * [Part 1 - Install R and RStudio](part1_install_r.html)
 
@@ -27,5 +27,7 @@ instructional materials for the course.
 
 ### people to follow
 [@jennybryan](https://twitter.com/jennybryan)
+
 [@hadleywickham](https://twitter.com/hadleywickham)
+
 [@rdpeng](https://twitter.com/rdpeng)
