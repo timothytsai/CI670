@@ -1,7 +1,5 @@
 ---
 title: "FAQ"
-author: "Document Author"
-date: "`r Sys.Date()`"
 output:
   prettydoc::html_pretty:
     theme: cayman
@@ -11,8 +9,8 @@ output:
 ## Why am I here?
 
 You are here because you're a student in CI670 - Biostatistics with Computing.
-You want to learn how to use R to perform exploratory data analysis and
-statistical analysis on your data.
+You want to learn about biostatistics and how to use R to perform exploratory 
+data analysis and statistical analysis on your data.
 
 ## How do I get help?
 
@@ -20,27 +18,27 @@ For course content, email me or your instructor.
 
 But, the most important thing we can teach you is how to find your own answers.
 Some resources: [Stackoverflow](https://www.stackoverflow.com)
-in RStudio, cheatsheets - go to Help and then cheatsheets.
+in RStudio, cheatsheets - go to Help and then cheatsheets or go to the 
+[RStudio website](https://www.rstudio.com/resources/cheatsheets/).
 
 ## Why are you obsessed with R?
 
 We try to be agnostic about our statistical software.  After all, it's a just a
-means to an end.  BUT, R has some pros that we like.  This means that we get to
-our destination with a little less pain and suffering, in style if you will.
+means to an end.  BUT, R has some pros that we like.
 
-R is growing in popularity
+- [R is growing in popularity](http://r4stats.com/articles/popularity/)
 
-open data science
+- [open science](https://ropensci.org/about/)
 
-reproducibility
+- reproducibility
 
-free
+- free
 
-nice, relatively painless graphics
+- nice, relatively painless graphics
 
-free
+- free (as in beer)
 
-To be fair, other stats packages are more popular in certain industries.
+- active development of new packages, sometimes by experts
 
 ## How did you make this awesome website?
 
