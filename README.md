@@ -19,7 +19,6 @@ instructional materials for the course.
 - reading in different types of data
 
 * [FAQ](FAQ.html)
-* [Syllabus](Syllabus.html)
 * [Part 1 - Install R and RStudio](part1_install_r.html)
 
 ### Additional info
