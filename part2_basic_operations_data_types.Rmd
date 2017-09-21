@@ -21,7 +21,8 @@ If you haven't already done so, install R and RStudio in
 [Part 1](https://timothytsai.github.io/CI670/part1_install_r.html)
 
 ### Introduction to data types
-There are 5 basic types of data (classes which dictate what kinds of values a variable can take) in R:
+There are 5 basic types of data (classes which dictate what kinds of values a 
+variable can take) in R:
 - logical
 - integer
 - numeric
@@ -40,12 +41,102 @@ We will focus on **vectors** and **data frames**.
 
 ### Vectors
 
+Vectors are the most basic data structure in R and you will deal with vectors
+when using functions and writing your own functions.
+
 ```{r}
 age.years <- c(25, 40, 77)
 ```
 
-By running the above line of code, you just created a vector using the `c()` function and stored it as a vector named `age.years`.  
+By running the above line of code, you just created a *numeric* vector using the
+`c()` function and stored it as a vector named `age.years`.  
 
-A vector is a sequence of data elements of the same type.  You can have vectors of each of the data types we mentioned above.
+A vector is an ordered sequence of data elements of the same type.  You can have
+vectors of each of the data types we mentioned above.
 
-We use an arrow `<-` to assign elements on the **right** to the object on the **left**.
+We use an arrow `<-` to assign elements on the **right** to the object on 
+the **left**.
+
+`age.years` in our example above is a numeric vector with 3 elements.  If we
+want to output the second element in the vector, we run: `age.years[2]`, 
+returning `r age.years[2]`.
+
+Vectors are useful because you can perform *vectorized operations*.  A simple
+illustration of this is:
+
+```{r}
+age.years + 1
+```
+
+In the line of code above, we have added 1 to each element of the vector.  This
+type of operation is a significant advantage of R.  In some other languages,
+you might have to write a loop to add one to each element sequentially until the
+loop reaches the end of the object.  R can do this simultaneously to each
+element, which is generally more efficient.
+
+#### Important Vector properties
+
+When you encounter a vector in the wild, you should find out two key properties
+of the vector before working with it: type and length.
+
+`typeof(age.years)` will tell you that `age.years` is of type "double", a type
+of numeric format (see `?double` for possible boring details).
+
+`length(age.years)` tells you that `age.years` has 3 elements.
+
+### Data frames
+
+If we were to create three vectors of equal length and join them together, we
+would create an object with 3 rows and 3 columns.
+
+```{r}
+age <- age.years
+gender <- c("M", "F", "F")
+smoking <- c(TRUE, TRUE, FALSE)
+```
+
+Above we have just created three vectors of different types but the same length
+(3).
+
+We will now use `data.frame()` to join them together
+
+```{r}
+mydataframe <- data.frame(age, gender, smoking)
+```
+
+We have just created a data frame called "mydataframe" with 3 observations and 3
+variables - age, gender, and smoking.
+
+A dataframe is the fundamental method for storing tabular data in R.  You can 
+think of it as a list of vectors, or a rectangular list.  When creating a
+dataframe from one or more vectors, each vector must be of the same length.
+
+A dataframe has columns and rows which may be modified.
+
+```{r}
+colnames(mydataframe)
+row.names(mydataframe)
+```
+
+#### Indexing a dataframe
+
+When we want to examine an element of an object - in this case, a dataframe, we
+need to *index* the desired part of the object.  Like finding a book (a form of
+physical media) in a library (a place where books are stored), there is a
+logical system that R uses.
+
+The important thing to remember is Row, Column.
+
+```{r}
+mydataframe[2,3]
+```
+
+Above we have returned the element in the 2nd Row, 3rd Column.  You can verify
+this by examining `View(mydataframe)`.
+
+If we run `mydataframe[2,]`, we return the 2nd row and `mydataframe[, 3]` returns
+the 3rd column.  Note that you need to keep the comma and put it in the 
+appropriate location.
+
+Once you know the column names of the dataframe, you can also return that column
+by using the `$` symbol - `mydataframe$age`, for example.

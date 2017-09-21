@@ -1,0 +1,58 @@
+---
+title: "Working with a dataset"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+## Overview
+
+We will install a package containing a dataset and use it to practice some 
+exploratory data analysis methods.
+
+### Install the gapminder package
+
+Run the command `install.packages("gapminder")`, followed by 
+```{r, warning=FALSE}
+library(gapminder)
+```
+
+### Store and subset the data
+
+Run `gapminder`.  The output will look a little strange.
+Let's get our bearings.
+
+First, store the dataset in your environment with
+```{r}
+mygapminder <- gapminder
+```
+
+This will make the dataset more accessible.
+
+Then, use some commands that we know to get a sense of what's going on:
+`str(mygapminder)` and `summary(mygapminder)`.
+
+Use `unique(mygapminder$country)` to examine a list of all the unique values that
+`mygapminder$country` can take on.
+
+Let's say we want to focus our analysis on a specific country (intra-national
+vs. inter-national). We need to create a subset of the data with only data from
+the desired country.
+
+We'll use the `sample()` command to randomly select a country to analyze.
+`sample(unique(mygapminder$country), 1)`.  We just told R to take a sample of 1
+from the result of `unique()`.
+
+That was the lazy and messy way.  We should do:
+
+```{r, results='hide'}
+countries <- unique(mygapminder$country)
+sample(countries, 1)
+```
+
+This is easier to read, and we have a `countries` object to use later. 
+
+Let's say R chose Iceland.  We can run 
+`subset(mygapminder, country == "Iceland")` to return only the data for records 
+where country is equal to "Iceland".
