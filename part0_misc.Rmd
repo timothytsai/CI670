@@ -1,0 +1,42 @@
+---
+title: "Useful miscellania"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+## Packages
+data.table
+dplyr
+ggplot2
+Hmisc
+
+rmarkdown
+bookdown blogdown
+knitr
+pandoc
+shiny
+
+## Commands
+str()
+summary()
+unique()
+apply()
+rm()
+
+
+## Websites
+
+### Reference
+[base graphics mnemonics](https://www.stat.auckland.ac.nz/~paul/R/parMemnonics.html)
+
+### Instructional
+Hadley R for data science
+datacamp
+coursera
+
+### Social
+RStudio community
+Boston R Users group
+[stats blog](https://simplystatistics.org/)
