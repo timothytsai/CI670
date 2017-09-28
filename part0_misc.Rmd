@@ -7,23 +7,22 @@ output:
 ---
 
 ## Packages
-data.table
-dplyr
-ggplot2
-Hmisc
-
-rmarkdown
-bookdown blogdown
-knitr
-pandoc
-shiny
+data.table  
+dplyr  
+ggplot2  
+Hmisc  
+rmarkdown  
+bookdown blogdown  
+knitr  
+pandoc  
+shiny  
 
 ## Commands
-str()
-summary()
-unique()
-apply()
-rm()
+str()  
+summary()  
+unique()  
+apply()  
+rm()  
 
 
 ## Websites
@@ -32,11 +31,12 @@ rm()
 [base graphics mnemonics](https://www.stat.auckland.ac.nz/~paul/R/parMemnonics.html)
 
 ### Instructional
-Hadley R for data science
-datacamp
-coursera
+[Hadley Wickham - R for data science](http://r4ds.had.co.nz/)
+[Datacamp](https://www.datacamp.com/)  
+[Coursera](https://www.coursera.org/)  
 
 ### Social
-RStudio community
-Boston R Users group
+[RStudio community](https://community.rstudio.com/)  
+Boston R Users group  
+[Yihui Xie](https://yihui.name/en/)
 [stats blog](https://simplystatistics.org/)
