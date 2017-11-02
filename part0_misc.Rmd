@@ -40,3 +40,8 @@ rm()
 Boston R Users group  
 [Yihui Xie](https://yihui.name/en/)
 [stats blog](https://simplystatistics.org/)
+
+### Podcasts
+[The Effort Report](https://effortreport.libsyn.com) - Johns Hopkins Professors
+discuss topics relating to life in academia.  
+[Free Associations](https://populationhealthexchange.org/tools/podcasts/free-associations/) - BU School of Public Health Professors explore a different journal article every week.

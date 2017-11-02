@@ -65,13 +65,21 @@ plot(prev, ppv, las = 1, xlim = c(0, 0.5), ylim = c(0, 1))
 lines(prev, ppv4, color="red", type="b", pch=16)
 ```
 
+Let's identify the variables we repeated when constructing our plot:
+
+- prev
+- sens
+- spec
+
 We can simplify this process using the following function:
 
 ```{r, eval = FALSE}
 ppv.plot <- function(prevalence, sensitivity, specificity){
 ppv <- (sensitivity * prevalence) /
     ((sensitivity * prevalence) + (1 - specificity) * (1 - prevalence))
-  plot.out <- plot(prevalence, ppv, las = 1, xlim = c(0, 0.5), ylim = c(0, 1))
- return(plot.out)
+
+plot.out <- plot(prevalence, ppv, las = 1, xlim = c(0, 0.5), ylim = c(0, 1))
+
+return(plot.out)
 }
 ```
