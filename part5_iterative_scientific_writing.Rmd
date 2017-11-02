@@ -1,0 +1,14 @@
+---
+title: "Iterative Scientific Writing"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+## Overview
+
+Here we present an iterative method for scientific writing as initially
+described by [Jean-luc Doumont](https://www.treesmapsandtheorems.com),
+an expert in scientific communication.
+

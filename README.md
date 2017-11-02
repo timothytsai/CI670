@@ -23,6 +23,8 @@ Welcome to the CI 670 Lab Site.  This site hosts the lab modules and R instructi
 * [Part 1 - Install R and RStudio](part1_install_r.html)
 * [Part 2 - Basic Operations and Data Types](part2_basic_operations_data_types.html)
 * [Part 3 - Working with a dataset](part3_working_with_a_dataset.html)
+* [Part 4 - Writing a function](part4_writing_a_function.html)
+* [Part 5 - Iterative Scientific Writing](part5_iterative_scientific_writing.html)
 
 ### Additional info
 [Source code for this site](https://github.com/timothytsai/CI670)  

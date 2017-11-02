@@ -29,9 +29,7 @@ constructed by the user as opposed to provided by R or an R package.
 There are many reasons why you might want to write your own function:
 
 - to avoid repeating chunks of code that do the same thing
-
 - to share a piece of code 
-
 - to automate tasks
 
 By avoiding repeated chunks of code, we are also improving the readability of
@@ -57,7 +55,7 @@ values of sens and spec, saving the new PPVs to objects names ppv1 ... ppv4
 prev <- seq(.1, .4, .025)
 sens <- .88
 spec <- .6
-ppv <- sens * prev / ((sens*prev) + (1-spec)*(1-prev))
+ppv  <- sens * prev / ((sens*prev) + (1-spec)*(1-prev))
 ```
 
 Finally, we constructed a plot of prevalence and ppv using the below:
