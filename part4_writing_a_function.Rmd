@@ -13,17 +13,67 @@ positive predictive value (PPV) given sensitivity, specificity, and prevalence.
 
 ### Functions
 
+Functions in R are a type of object which at the fundamental level, accept an 
+input and return an output.  Contrast this to the mathematical definition of a
+function, where each input is related to exactly one output.
+
+A function is a set of instructions that you want to use repeatedly or are so
+complex that they are best contained in a single object (as opposed to multiple
+lines of code in a script).
+
+#### User-defined functions
+
+This module will focus on user-defined functions, or functions that are 
+constructed by the user as opposed to provided by R or an R package.
+
+There are many reasons why you might want to write your own function:
+
+- to avoid repeating chunks of code that do the same thing
+
+- to share a piece of code 
+
+- to automate tasks
+
+By avoiding repeated chunks of code, we are also improving the readability of
+the code and reducing the likelihood of errors associated with copying and
+pasting.  Improved readability of code means that it is easier to spot errors.
+It is also easier to make a correction or update to a single function compared 
+to multiple nearly identical pieces of code.  
+
+### Example
+
+In class, we calculated Positive Predictive Value using the following piece of
+code:
+
+```{r, eval = FALSE}
+ppv <- (sensitivity * prevalence) /
+    ((sensitivity * prevalence) + (1 - specificity) * (1 - prevalence))
+```
+
+We then calculated different PPVs using the code below, repeated for different
+values of sens and spec, saving the new PPVs to objects names ppv1 ... ppv4
+
+```{r, eval = FALSE}
 prev <- seq(.1, .4, .025)
 sens <- .88
 spec <- .6
 ppv <- sens * prev / ((sens*prev) + (1-spec)*(1-prev))
+```
 
+Finally, we constructed a plot of prevalence and ppv using the below:
+
+```{r, eval = FALSE}
 plot(prev, ppv, las = 1, xlim = c(0, 0.5), ylim = c(0, 1))
 lines(prev, ppv4, color="red", type="b", pch=16)
+```
 
+We can simplify this process using the following function:
+
+```{r, eval = FALSE}
 ppv.plot <- function(prevalence, sensitivity, specificity){
-  ppv <- sensitivity * prevalence /
-    ((sensitivity*prevalence) + (1-specificity)*(1-prevalence))
+ppv <- (sensitivity * prevalence) /
+    ((sensitivity * prevalence) + (1 - specificity) * (1 - prevalence))
   plot.out <- plot(prevalence, ppv, las = 1, xlim = c(0, 0.5), ylim = c(0, 1))
  return(plot.out)
 }
+```
