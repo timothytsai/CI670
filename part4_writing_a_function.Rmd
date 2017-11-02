@@ -1,0 +1,15 @@
+---
+title: "Writing a function"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+## Overview
+
+In this module, we'll learn about functions and write a simple function to plot
+positive predictive value (PPV) given sensitivity, specificity, and prevalence.
+
+### Functions
+
