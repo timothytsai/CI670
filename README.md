@@ -25,6 +25,7 @@ Welcome to the CI 670 Lab Site.  This site hosts the lab modules and R instructi
 * [Part 3 - Working with a dataset](part3_working_with_a_dataset.html)
 * [Part 4 - Writing a function](part4_writing_a_function.html)
 * [Part 5 - Iterative Scientific Writing](part5_iterative_scientific_writing.html)
+* [Part 6 - Review: Experimental Design](part6_review_experimental_design.html)
 
 ### Additional info
 [Source code for this site](https://github.com/timothytsai/CI670)  
