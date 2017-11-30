@@ -1,0 +1,61 @@
+---
+title: "Review: Experimental Design - Power and Sample Size"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+## Overview
+
+Last class, we looked at statistical power and sample size.  Here, we'll review
+that material by looking at some practice questions.
+
+## Statistical Power
+
+Define statistical power in words:
+
+"the probability of observing statistically significant evidence against a
+null hypothesis if a specific and defined alternative hypothesis is in fact
+true"
+
+We discussed two contrasting paradigms for contextualizing power, what are they?
+
+inferential - experiment's ability to falsify a hypothesis
+
+estimation - experiment's ability to provide precision in estimating a parameter
+
+define precision
+
+one-half the width of a Confidence Interval
+
+## Error
+Define $\alpha$ and $\beta$
+
+$\alpha$ = $P(Type\: I\: Error) = P(Reject\: H_{0} | H_{0}\: True)$
+
+$\beta$ = $P(Type\: II\: Error) = P(Failing\: to\: reject \:H_{0} | H_{0}\: False)$
+
+Give an example of when you might want to change your $\alpha$ level.
+
+Give an example of when you might want to change your $\beta$ level.
+
+## RCT Example
+
+Scientific  Hypothesis:  Transcranial Direct Current Stimulation (tDCS) will
+promote higher gait speed in older adults (age 65 and older).
+
+Older adults aged 65 and older, randomized to tDCS vs. control
+
+Primary  Outcome  Measures:  Functional Outcomes  (Gait Speed, grip strength,
+balance).
+
+Statistical  hypothesis:   Mean  head  circumference  (HC)  will  be
+greater  at  20  weeks  with  supplemental  formula  than without.
+
+Choose Type-I error probability (α): 0.05
+
+Choose desired power (1−β):  0.80
+
+Specific statistical hypothesis: Gait speed will be 0.1 meters / second greater
+with  tDCS  than  without, on average.
